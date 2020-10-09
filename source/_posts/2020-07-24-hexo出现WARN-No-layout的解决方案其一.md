@@ -5,7 +5,7 @@ tags: [hexo]
 ---
 
 主题为 icarus - version 3.0.0，运行以下命令：
-```bash
+```Bash
 npm install --save hexo-component-inferno@^0.3.0
 ```
 

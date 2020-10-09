@@ -4,7 +4,7 @@ date: 2020-08-18 17:17:54
 tags: 
 ---
 
-```python 线性规划实例
+```python
 import numpy as np
 from scipy.optimize import linprog
 a = np.array([1, 1, 1])

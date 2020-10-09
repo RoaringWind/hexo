@@ -4,7 +4,8 @@ date: 2020-06-15 23:01:25
 tags: [Java,constructor,javaClass]
 ---
 
-```java SubCat.java
+```java
+//SubCat.java
 class Cat  {
     Cat (int c)  {
         System.out.print ("cat"+c+" ");  
@@ -26,7 +27,8 @@ class SubCat extends Cat  {
 }
 ```
 
-```java CB.java
+```java
+//CB.java
 class Ca{
     int num = 1;
     //Ca(){}; not worked,because CB calls the default parameterless constructor of the parent class by default
@@ -49,7 +51,8 @@ class Cb extends Ca{
 } 
 ```
 
-```java C.java
+```java
+//C.java
 class A {
     public void func1() {
         System.out.println("A func1 is calling");
@@ -83,7 +86,8 @@ class C {
 - 内部类作为父类时不能向下转型。
 - 如果有一个带形参的构造函数，编译器不会自动添加无参的构造函数。
 
-```java Pen.java
+```java
+//Pen.java
 class Pencil{
     public void write (String content){
         System.out.println( "Write"+content);

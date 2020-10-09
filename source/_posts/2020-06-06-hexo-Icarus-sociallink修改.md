@@ -7,7 +7,8 @@ tags:
 操作系统:win10 18363 64位,使用git进行`hexo clean;hexo g;hexo deploy`，具体环境如下。
 
 
-```git check versions in git
+```git
+# check versions in git
 $ git --version
 git version 2.27.0.windows.1
 
@@ -35,11 +36,11 @@ unicode: 13.0
 首先打开`hexo\themes\icarus`目录下的_config.yml文件，在前几行里可以找到icarus的版本是3.0.0。
 用编辑器打开 `hexo\themes\icarus\layout\widget\profile.jsx`文件，定位到14行，把
 
-```jsx hexo\themes\icarus\layout\widget\profile.jsx
+```jsx
 {'icon' in link ? <i class={link.icon}></i> : link.name}
 ```
 修改成
-```jsx hexo\themes\icarus\layout\widget\profile.jsx
+```jsx
 {'icon' in link ? <img src={link.icon} style="height: 20px;width: 20px;"></img> : link.name}
 ```
 此句的目的在于，将图标的来源改成本地图片，而不是官方钦定的fontawesome格式。其中height和width表示图片的宽度和高度（仅测试长宽都是20px）。
